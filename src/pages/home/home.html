@@ -1,0 +1,95 @@
+<ion-header no-shadow>
+    <ion-navbar >
+        <ion-title>Olá Joãozinho</ion-title>
+        <ion-buttons end>
+            <ion-icon color="primary" slot="start" name="settings"></ion-icon>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content >
+    <ion-content [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+            <ion-item class="combobox">
+                    <ion-label >Dia da semana:</ion-label>
+                    <ion-select [(ngModel)]="semana">
+                        <ion-option value="1">Segunda</ion-option>
+                        <ion-option value="2">Terça</ion-option>
+                        <ion-option value="3">Quarta</ion-option>
+                        <ion-option value="2">Quinta</ion-option>
+                        <ion-option value="3">Sexta</ion-option>
+                    </ion-select>
+                </ion-item>
+                <p>
+                    Abaixo as aulas do dia:
+                </p>
+        <ion-card class="ion-card-lojas">
+            <ion-list no-lines>
+                <ion-item (click)="openAulaInfoModalPage()">
+                    <ion-avatar item-start>
+                        <img src="https://nova-escola-producao.s3.amazonaws.com/MVMJFMQjzfQr4s6aJ6nmYTgBTgmPzEmqNCtxzv9P5S3gsZPVKZrQvKh3TqNe/professora-com-cadernos-e-ficharios.jpg">
+                    </ion-avatar>
+                    <h2>
+                        <b>1º Português</b>
+                    </h2>
+                    <h3>Paulinha</h3>
+                </ion-item>
+            </ion-list>
+        </ion-card>
+
+        <ion-card class="ion-card-lojas">
+            <ion-list no-lines>
+                <ion-item (click)="openAulaInfoModalPage()">
+                    <ion-avatar item-start>
+                        <img src="https://cdnstatic8.com/ripio.com.br/wp-content/uploads/2016/03/camiseta-manga-curta-azul-professor-colecao-2016-001.jpg">
+                    </ion-avatar>
+                    <h2>
+                        <b>2º Matemática</b>
+                    </h2>
+                    <h3>Joslane</h3>
+                </ion-item>
+            </ion-list>
+        </ion-card>
+
+        <ion-card class="ion-card-lojas">
+            <ion-list no-lines>
+                <ion-item (click)="openAulaInfoModalPage()">
+                    <ion-avatar item-start>
+                        <img src="https://image.shutterstock.com/image-photo/grey-hair-professor-holding-book-260nw-787199356.jpg">
+                    </ion-avatar>
+                    <h2>
+                        <b>3º Geografia </b>
+                    </h2>
+                    <h3>Calos</h3>
+                </ion-item>
+            </ion-list>
+        </ion-card>
+
+        <ion-card class="ion-card-lojas">
+            <ion-list no-lines>
+                <ion-item (click)="openAulaInfoModalPage()">
+                    <ion-avatar item-start>
+                        <img src="https://image.shutterstock.com/image-photo/grey-hair-professor-holding-book-260nw-787199356.jpg">
+                    </ion-avatar>
+                    <h2>
+                        <b>4º Geografia </b>
+                    </h2>
+                    <h3>Calos</h3>
+                </ion-item>
+            </ion-list>
+        </ion-card>
+
+        <ion-card class="ion-card-lojas">
+            <ion-list no-lines>
+                <ion-item (click)="openAulaInfoModalPage()">
+                    <ion-avatar item-start>
+                        <img src="https://f.i.uol.com.br/fotografia/2018/12/06/15441225585c0970be0be1e_1544122558_3x2_md.jpg">
+                    </ion-avatar>
+                    <h2>
+                        <b>5º Ensino Religioso </b>
+                    </h2>
+                    <h3>Lurdes</h3>
+                </ion-item>
+            </ion-list>
+        </ion-card>
+    </ion-content>
+</ion-content>
